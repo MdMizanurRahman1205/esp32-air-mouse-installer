@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ESP32 Air Mouse Firmware</title>
+
+  <script type="module"
+    src="https://unpkg.com/esp-web-tools@9/dist/web/install-button.js">
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      text-align: center;
+      padding-top: 50px;
+    }
+    h1 {
+      color: #222;
+    }
+    p {
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>ESP32 Air Mouse</h1>
+  <p>Firmware Installer</p>
+  <p>Use <b>Chrome / Edge</b> browser</p>
+
+  <esp-web-install-button
+    manifest="manifest.json">
+  </esp-web-install-button>
+
+  <p style="margin-top:40px;font-size:14px;">
+    Plug ESP32 → Click Install → Select COM Port
+  </p>
+
+</body>
+</html>
+ 

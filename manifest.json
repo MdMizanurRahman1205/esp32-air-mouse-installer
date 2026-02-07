@@ -1,0 +1,16 @@
+{
+  "name": "ESP32 Air Mouse",
+  "version": "1.0",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "air_mouse_electrosurgeon.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
+ 
