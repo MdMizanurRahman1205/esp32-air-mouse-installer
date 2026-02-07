@@ -1,43 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ESP32 Air Mouse Firmware</title>
+  <title>ESP32 Air Mouse | ElectroSurgeon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script type="module"
+  <!-- ESP Web Tools -->
+  <script
+    type="module"
     src="https://unpkg.com/esp-web-tools@9/dist/web/install-button.js">
   </script>
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: radial-gradient(circle at top, #0f2027, #000000);
+      color: #ffffff;
       text-align: center;
-      padding-top: 50px;
+      min-height: 100vh;
     }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
     h1 {
-      color: #222;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #00e5ff;
     }
-    p {
-      color: #555;
+
+    h2 {
+      font-weight: 400;
+      color: #cccccc;
+      margin-bottom: 30px;
+    }
+
+    .brand {
+      font-size: 1rem;
+      color: #aaa;
+      margin-bottom: 40px;
+    }
+
+    esp-web-install-button {
+      --esp-tools-button-color: #00e5ff;
+      --esp-tools-button-text-color: #000;
+      --esp-tools-button-border-radius: 8px;
+      --esp-tools-button-font-size: 18px;
+    }
+
+    .steps {
+      margin-top: 30px;
+      font-size: 0.95rem;
+      color: #bbb;
+      line-height: 1.6;
+    }
+
+    .youtube {
+      margin-top: 50px;
+      padding: 25px;
+      background: #111;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255,0,0,0.2);
+    }
+
+    .youtube h3 {
+      color: #ff4444;
+      margin-bottom: 10px;
+    }
+
+    .youtube a {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 22px;
+      background: #ff0000;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .youtube a:hover {
+      background: #cc0000;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.8rem;
+      color: #777;
     }
   </style>
 </head>
 
 <body>
+  <div class="container">
 
-  <h1>ESP32 Air Mouse</h1>
-  <p>Firmware Installer</p>
-  <p>Use <b>Chrome / Edge</b> browser</p>
+    <h1>ESP32 Air Mouse</h1>
+    <h2>Wireless Motion Mouse Firmware</h2>
 
-  <esp-web-install-button
-    manifest="manifest.json">
-  </esp-web-install-button>
+    <div class="brand">
+      Powered by <strong>ElectroSurgeon</strong>
+    </div>
 
-  <p style="margin-top:40px;font-size:14px;">
-    Plug ESP32 → Click Install → Select COM Port
-  </p>
+    <esp-web-install-button
+      manifest="manifest.json">
+    </esp-web-install-button>
 
+    <div class="steps">
+      🔌 Plug ESP32 → Click CONNECT → Select COM Port → Install Firmware  
+      <br>
+      ⚠️ Use <b>Chrome or Edge</b> browser only
+    </div>
+
+    <div class="youtube">
+      <h3>🔥 Learn Electronics & ESP32 Projects</h3>
+      <p>Watch tutorials, projects & hacks on my YouTube channel</p>
+      <a href="https://www.youtube.com/@electrosurgeon" target="_blank">
+        ▶ Subscribe to ElectroSurgeon
+      </a>
+    </div>
+
+    <footer>
+      © 2026 ElectroSurgeon | ESP32 Air Mouse Firmware
+    </footer>
+
+  </div>
 </body>
 </html>
- 
