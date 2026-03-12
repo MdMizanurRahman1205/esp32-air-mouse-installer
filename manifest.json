@@ -7,7 +7,7 @@
       "parts": [
         {
           "path": "air_mouse_electrosurgeon.bin",
-          "offset": 65536
+          "offset": 0
         }
       ]
     }
